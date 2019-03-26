@@ -1,0 +1,55 @@
+* {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	box-sizing: border-box;
+	transition: 0.25s;
+	font-family: Regular;
+}
+
+@font-face {
+  font-family: Display;
+  src: url('resources/fonts/nexablack.woff') format('woff');
+}
+@font-face {
+  font-family: Regular;
+  src: url('resources/fonts/nexaregular.woff') format('woff');
+}
+@keyframes fill {
+		 0% {
+			width: 0%;
+		}
+		100% {
+			width: 100%;
+		}
+}
+p, button {
+	font-size: 18px;
+
+}
+h1,h2,h3,h4,h5 {
+	font-family: Display;
+}
+
+button {
+	font-family: Regular;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.progress-bar {
+	border: 1px solid black;
+	height: 20px;
+	width: 405px;
+	margin-left: 2px;
+}
+
+.fillAnim {
+	animation:  15s fill linear 1;
+	height: 100%;
+	background-color: black;
+}
